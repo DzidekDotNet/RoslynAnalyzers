@@ -17,11 +17,12 @@
         <RepositoryUrl>https://github.com/DzidekDotNet/RoslynAnalyzers</RepositoryUrl>
         
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <Description>Set of roslyn analyzers</Description>
+        <Description>Roslyn analyzer kit</Description>
         <Copyright>@Dzidek.Net</Copyright>
         <PackageTags>Dzidek.Net.RoslynAnalyzers, analyzers, roslyn</PackageTags>
         <DevelopmentDependency>true</DevelopmentDependency>
         <NoPackageAnalysis>true</NoPackageAnalysis>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
 
         <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
     </PropertyGroup>
@@ -39,5 +40,10 @@
             <TfmSpecificPackageFile Include="$(OutputPath)\Dzidek.Net.RoslynAnalyzers.Boundaries.dll" PackagePath="analyzers/dotnet/cs" />
         </ItemGroup>
     </Target>
+
+    <ItemGroup>
+      <Content Include="..\README.md" Pack="true" PackagePath="\">
+      </Content>
+    </ItemGroup>
 
 </Project>
