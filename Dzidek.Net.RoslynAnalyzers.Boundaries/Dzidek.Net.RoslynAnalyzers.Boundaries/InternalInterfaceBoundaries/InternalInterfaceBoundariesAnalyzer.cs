@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Dzidek.Net.RoslynAnalyzers.Boundaries;
+namespace Dzidek.Net.RoslynAnalyzers.Boundaries.InternalInterfaceBoundaries;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class InternalInterfaceBoundariesAnalyzer : DiagnosticAnalyzer
@@ -40,12 +40,18 @@ public class InternalInterfaceBoundariesAnalyzer : DiagnosticAnalyzer
     var constructorDeclaration = (ConstructorDeclarationSyntax)context.Node;
     foreach (var parameter in constructorDeclaration.ParameterList.Parameters)
     {
+      if(parameter.Type is null)
+        continue;
+      
       var parameterTypeSymbol = context.SemanticModel.GetTypeInfo(parameter.Type).Type;
       if (parameterTypeSymbol is not ({ TypeKind: TypeKind.Interface or TypeKind.Class } and ISymbol { DeclaredAccessibility: Accessibility.Internal }))
         continue;
       
-      var classNamespace = context.ContainingSymbol.ContainingNamespace.ToDisplayString();
+      var classNamespace = context.ContainingSymbol?.ContainingNamespace.ToDisplayString();
       var ns = parameterTypeSymbol as INamedTypeSymbol;
+      if(ns is null || classNamespace is null)
+        continue;
+      
       var interfaceNamespace = ns.ContainingNamespace.ToDisplayString();
       if (interfaceNamespace.StartsWith(classNamespace))
         continue;

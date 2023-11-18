@@ -60,6 +60,15 @@ namespace Dzidek.Net.RoslynAnalyzers.Boundaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change the modifier to public for the interface &apos;{0}&apos; .
+        /// </summary>
+        internal static string DDN0001CodeFixTitle_Change {
+            get {
+                return ResourceManager.GetString("DDN0001CodeFixTitle_Change", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove the &apos;{0}&apos; parameter from the list of constructor parameters..
         /// </summary>
         internal static string DDN0001CodeFixTitle_Remove {
@@ -69,7 +78,7 @@ namespace Dzidek.Net.RoslynAnalyzers.Boundaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An internal interface cannot be used outside its namespace scope.
+        ///   Looks up a localized string similar to An internal interface cannot be used outside its namespace scope..
         /// </summary>
         internal static string DDN0001Description {
             get {

@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <PackageId>Dzidek.Net.RoslynAnalyzers</PackageId>
+        <PackageVersion>1.0.0.0-alpha</PackageVersion>
+        <Authors>Dzidek.Net</Authors>
+        <PackageProjectUrl>https://github.com/DzidekDotNet/RoslynAnalyzers</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/DzidekDotNet/RoslynAnalyzers/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/DzidekDotNet/RoslynAnalyzers</RepositoryUrl>
+        
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Description>Set of roslyn analyzers</Description>
+        <Copyright>@Dzidek.Net</Copyright>
+        <PackageTags>Dzidek.Net.RoslynAnalyzers, analyzers, roslyn</PackageTags>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <NoPackageAnalysis>true</NoPackageAnalysis>
+
+        <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="tools\*.ps1" CopyToOutputDirectory="PreserveNewest" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries.csproj" />
+    </ItemGroup>
+
+    <Target Name="_AddAnalyzersToOutput">
+        <ItemGroup>
+            <TfmSpecificPackageFile Include="$(OutputPath)\Dzidek.Net.RoslynAnalyzers.Boundaries.dll" PackagePath="analyzers/dotnet/cs" />
+        </ItemGroup>
+    </Target>
+
+</Project>

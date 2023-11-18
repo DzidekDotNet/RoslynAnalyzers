@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using Dzidek.Net.RoslynAnalyzers.Boundaries.InternalInterfaceBoundaries;
 using Dzidek.Net.RoslynAnalyzers.TestsBase;
 
-namespace Dzidek.Net.RoslynAnalyzers.Boundaries.Tests;
+namespace Dzidek.Net.RoslynAnalyzers.Boundaries.Tests.InternalInterfaceBoundaries;
 
 using Verifier =
   MultipleFilesCodeFixVerifier<InternalInterfaceBoundariesAnalyzer,
