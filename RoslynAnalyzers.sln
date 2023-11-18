@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzidek.Net.RoslynAnalyzers.Boundaries", "Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries.csproj", "{B4AEA216-7709-4401-B048-F4B7F1148797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzidek.Net.RoslynAnalyzers.Boundaries.Sample", "Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries.Sample\Dzidek.Net.RoslynAnalyzers.Boundaries.Sample.csproj", "{9FF06570-461F-4629-A01D-7B168A9E767B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzidek.Net.RoslynAnalyzers.Boundaries.Tests", "Dzidek.Net.RoslynAnalyzers.Boundaries\Dzidek.Net.RoslynAnalyzers.Boundaries.Tests\Dzidek.Net.RoslynAnalyzers.Boundaries.Tests.csproj", "{B5618502-5663-42F5-BEAE-16548BE64A83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzidek.Net.RoslynAnalyzers.TestsBase", "Dzidek.Net.RoslynAnalyzers.TestsBase\Dzidek.Net.RoslynAnalyzers.TestsBase.csproj", "{F809CACB-A96F-4827-A99F-02A9F240D871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4AEA216-7709-4401-B048-F4B7F1148797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AEA216-7709-4401-B048-F4B7F1148797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AEA216-7709-4401-B048-F4B7F1148797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AEA216-7709-4401-B048-F4B7F1148797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF06570-461F-4629-A01D-7B168A9E767B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF06570-461F-4629-A01D-7B168A9E767B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF06570-461F-4629-A01D-7B168A9E767B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF06570-461F-4629-A01D-7B168A9E767B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5618502-5663-42F5-BEAE-16548BE64A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5618502-5663-42F5-BEAE-16548BE64A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5618502-5663-42F5-BEAE-16548BE64A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5618502-5663-42F5-BEAE-16548BE64A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F809CACB-A96F-4827-A99F-02A9F240D871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F809CACB-A96F-4827-A99F-02A9F240D871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F809CACB-A96F-4827-A99F-02A9F240D871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F809CACB-A96F-4827-A99F-02A9F240D871}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
