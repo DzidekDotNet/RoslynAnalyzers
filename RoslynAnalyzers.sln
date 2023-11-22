@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzidek.Net.RoslynAnalyzers.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Package", "Package\Package.csproj", "{A3CEA338-2808-4A19-BAB5-859FD4DA4D6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{95392E27-8091-4E2D-8C9F-4FEB106C3BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A3CEA338-2808-4A19-BAB5-859FD4DA4D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3CEA338-2808-4A19-BAB5-859FD4DA4D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3CEA338-2808-4A19-BAB5-859FD4DA4D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95392E27-8091-4E2D-8C9F-4FEB106C3BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95392E27-8091-4E2D-8C9F-4FEB106C3BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95392E27-8091-4E2D-8C9F-4FEB106C3BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95392E27-8091-4E2D-8C9F-4FEB106C3BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
