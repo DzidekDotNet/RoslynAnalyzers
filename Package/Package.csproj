@@ -10,7 +10,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Dzidek.Net.RoslynAnalyzers</PackageId>
-        <PackageVersion>1.0.0.0-alpha</PackageVersion>
+        <PackageVersion>1.0.0.0</PackageVersion>
         <Authors>Dzidek.Net</Authors>
         <PackageProjectUrl>https://github.com/DzidekDotNet/RoslynAnalyzers</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/DzidekDotNet/RoslynAnalyzers/blob/main/LICENSE</PackageLicenseUrl>
